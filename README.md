@@ -2,6 +2,11 @@
 
 A simple project demo for web-based automated task processing.
 
+## Video
+
+Demo video showcasing the project features.
+demo.mp4
+
 ## Features
 
 - **Web Server Based**: Accessible from mobile and desktop via web server
@@ -10,21 +15,12 @@ A simple project demo for web-based automated task processing.
 ## Installation
 
 ```bash
-# Clone the repository
-git clone <repository-url>
-
-# Navigate to the project
-cd project
-
-# Start the server
-npm start
-# or
-python app.py
+comming soon..
 ```
 
 ## Usage
 
-Access the web interface at `http://localhost:3000` from any device on the same network.
+comming soon..
 
 ## Video
 
