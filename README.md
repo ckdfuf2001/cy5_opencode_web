@@ -4,7 +4,7 @@
 
 ## 데모
 
-<video src="demo.mp4" controls autoplay muted loop playsinline width="100%"></video>
+<video src="chunks/demo_chunk_01.mp4" controls muted loop playsinline width="100%"></video>
 
 ## 원본 대비 추가된 기능
 
