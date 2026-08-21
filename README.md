@@ -1,6 +1,6 @@
 # cy5-webui
 
-[threehymns/opencode-webui](https://github.com/threehymns/opencode-webui) 클론에 아래 기능을 추가한 포크입니다.
+[threehymns/opencode-webui](https://github.com/threehymns/opencode-webui) 클론에 아래 기능을 추가한 포크입니다. 현재는 배포본만 제공하고 있습니다.
 
 
 ## 원본 대비 추가된 기능
