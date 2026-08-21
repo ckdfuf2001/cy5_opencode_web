@@ -1,60 +1,14 @@
-# Project Demo
+# cy5-webui
 
-A simple project demo for web-based automated task processing.
+[threehymns/opencode-webui](https://github.com/threehymns/opencode-webui) 클론에 아래 기능을 추가한 포크입니다.
 
-## Features
+## 데모
 
-- **Web Server Based**: Accessible from mobile and desktop via web server
-- **Schedule-Based Automatic Processing**: Automated task processing on a schedule
+<video src="demo.mp4" controls autoplay muted loop playsinline width="100%"></video>
 
-## Installation
+## 원본 대비 추가된 기능
 
-```bash
-comming soon..
-```
-
-## Usage
-
-comming soon..
-## Demo
-
-<a href="https://www.youtube.com/watch?v=demo" target="_blank">
-  <img src="http://img.youtube.com/vi/demo/hqdefault.jpg" alt="Watch the video on YouTube" width="100%" border="10">
-</a>
-
-<p><strong>Note:</strong> GitHub README does not support native video playback. The above link opens YouTube in a new tab for full video playback.<br>
-<br>
-### 영상 분할 안내 (Video Split into 10MB Chunks)
-
-The original demo video has been split into 7 manageable chunks (approximately 10MB each) to comply with repository size guidelines and ensure smooth loading:
-
-- `demo_chunk_00.mp4` - Chapters 0:00-10:55 (11.95 MB)
-- `demo_chunk_01.mp4` - Chapters 10:55-21:52 (9.34 MB)
-- `demo_chunk_02.mp4` - Chapters 21:52-32:48 (11.01 MB)
-- `demo_chunk_03.mp4` - Chapters 32:48-42:23 (8.35 MB)
-- `demo_chunk_04.mp4` - Chapters 42:23-52:20 (9.97 MB)
-- `demo_chunk_05.mp4` - Chapters 52:20-1:01:15 (9.55 MB)
-- `demo_chunk_06.mp4` - Chapters 1:01:15-10:55 (0.69 MB, end section)
-
-**To view the complete video:**
-1. Click the YouTube link above for full playback
-2. Download all chunks and concatenate using ffmpeg
-3. View individual chunks by clicking on filenames in the file tree
-
-### Concatenate All Chunks (Windows PowerShell)
-
-```bash
-Get-ChildItem -Path .\chunks\demo_chunk_*.mp4 | Sort-Object {[regex]::Match($_.Name, '\d+')} | ForEach-Object { ffmpeg -i "$_" -c copy temp.mp4 } ; ren temp.mp4 demo_full.mp4
-```
-
-# Or using ffmpeg directly:
-ffmpeg -i "chunks/demo_chunk_%02d.mp4" -c copy demo_full.mp4
-```
-
-### Individual Chunk Preview
-
-Each chunk can be viewed individually by clicking on the filename in the file tree, or by using:
-
-```bash
-ffplay chunks/demo_chunk_00.mp4
-```
+- **파일 탐색기 & 문서 뷰어** — 트리 탐색·업로드는 물론, PDF/DOCX/XLSX/PPTX/MSG 파일을 브라우저에서 바로 미리봅니다. DRM 문서는 로컬 MS Office COM 변환으로 처리하고, 텍스트 추출·제자리 편집 API를 제공합니다.
+- **스케줄러** — cron 기반으로 커맨드/프롬프트를 예약 실행합니다. 달력 뷰에서 예약·실행 이력을 한눈에 보고, 즉시 실행·활성 기간·담당 에이전트 지정이 가능합니다.
+- **백엔드 분리** — Bun+Hono 백엔드가 OpenCode 서버의 생명주기를 관리하고 REST/SSE를 프록시합니다. 단일 exe 포터블 패키징이 가능합니다.
+- **커맨드 관리** — 슬래시 커맨드/스킬/툴/에이전트를 UI에서 등록·편집하고, 실행 히스토리와 프로젝트/전역 스코프를 관리합니다.
