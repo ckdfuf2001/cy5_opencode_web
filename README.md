@@ -1,7 +1,7 @@
 # cy5-webui
 
 [threehymns/opencode-webui](https://github.com/threehymns/opencode-webui) 클론에 아래 기능을 추가한 포크입니다. 현재는 배포본만 제공하고 있습니다.
-Portable 릴리즈: https://github.com/ckdfuf2001/cy5_opencode_web/releases/tag/v0.3.2-cy5
+- Portable 릴리즈: https://github.com/ckdfuf2001/cy5_opencode_web/releases/tag/v0.3.2-cy5
 
 
 ## 원본 대비 추가된 기능
