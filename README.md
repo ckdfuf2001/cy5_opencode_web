@@ -1,6 +1,7 @@
 # cy5-webui
 
-[threehymns/opencode-webui](https://github.com/threehymns/opencode-webui) 클론에 아래 기능을 추가한 포크입니다. 현재는 배포본만 제공하고 있습니다.
+opencode.exe 를 backend로 사용하는, 앞단의 커스터마이즈 frontend 웹 서버입니다. (모바일 접근 가능)
+[threehymns/opencode-webui](https://github.com/threehymns/opencode-webui) 포크하여 아래 기능을 추가하였으며, 현재는 배포본만 제공하고 있습니다.
 - Portable 릴리즈: https://github.com/ckdfuf2001/cy5_opencode_web/releases/tag/v0.3.2-cy5
 
 
